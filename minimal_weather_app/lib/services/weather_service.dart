@@ -30,7 +30,7 @@ class WeatherService {
       permission = await Geolocator.requestPermission();
     }
 
-    // fetc the current location
+    // fetch the current location
     Position position = await Geolocator.getCurrentPosition(
         // ignore: deprecated_member_use
         desiredAccuracy: LocationAccuracy.high);
