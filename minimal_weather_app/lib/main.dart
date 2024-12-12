@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark(),
       title: 'Material App',
-      home: WeatherPage(),
+      home: const WeatherPage(),
     );
   }
 }
