@@ -71,17 +71,40 @@ class _WeatherPageState extends State<WeatherPage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            const Icon(
+              Icons.location_on,
+              size: 36,
+              color: Colors.grey,
+            ),
             // city name
-            Text(_weather?.cityName ?? "loading city.."),
+            Text(
+              _weather?.cityName ?? "loading city..",
+              style: const TextStyle(
+                  fontSize: 36,
+                  fontWeight: FontWeight.w500,
+                  color: Colors.grey),
+            ),
 
             // animation
             Lottie.asset(getWeatherAnimation(_weather?.mainCondition)),
 
             // temperature
-            Text("${_weather?.temperature.round()}°C"),
+            Text(
+              "${_weather?.temperature.round()}°C",
+              style: const TextStyle(
+                  fontSize: 36,
+                  fontWeight: FontWeight.w500,
+                  color: Colors.grey),
+            ),
 
             // weather condition
-            Text(_weather?.mainCondition ?? ""),
+            Text(
+              _weather?.mainCondition ?? "",
+              style: const TextStyle(
+                  fontSize: 36,
+                  fontWeight: FontWeight.w500,
+                  color: Colors.grey),
+            ),
           ],
         ),
       ),
