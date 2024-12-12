@@ -71,6 +71,7 @@ class _WeatherPageState extends State<WeatherPage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            // Location icon
             const Icon(
               Icons.location_on,
               size: 36,
